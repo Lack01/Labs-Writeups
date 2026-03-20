@@ -51,6 +51,8 @@ PORT   STATE SERVICE VERSION
 
 Al acceder a `http://10.129.34.243` en el navegador se presenta un **panel de login** con campos de usuario y contraseña.
 
+<img width="787" height="717" alt="image" src="https://github.com/user-attachments/assets/b3b3a454-fbdf-492d-b2b4-8ec4f8231a6f" />
+
 Detalles observados:
 - La URL usa `http://` sin la `s`, confirmando la ausencia de cifrado.
 - El navegador muestra el aviso **"Not Secure"**.
@@ -81,6 +83,9 @@ gobuster dir -u http://10.129.34.243 \
 /fonts     (Status: 301) [→ http://10.129.34.243/fonts/]
 ```
 
+<img width="699" height="432" alt="image" src="https://github.com/user-attachments/assets/0fd536e2-4dfd-4928-8348-21a12276d6d8" />
+
+
 El único archivo con status `200` es `index.php` con un tamaño de 4896 bytes — el resto son redirecciones a directorios estáticos.
 
 ---
@@ -102,6 +107,9 @@ También se comprobó la existencia de `robots.txt`, un archivo que a veces reve
 ```
 http://10.129.34.243/robots.txt → 404 Not Found
 ```
+
+<img width="987" height="345" alt="image" src="https://github.com/user-attachments/assets/6abe54f3-c555-46e7-9c34-8420c83d6a97" />
+
 
 Sin resultado. El servidor no tiene `robots.txt` configurado.
 
@@ -159,6 +167,9 @@ Username: ' OR 1=1-- -
 Password: (cualquier valor)
 ```
 
+<img width="987" height="345" alt="image" src="https://github.com/user-attachments/assets/7e7b783c-9fa2-4947-b1f6-7ae062434990" />
+
+
 **¿Cómo funciona este payload?**
 
 Si el backend ejecuta una consulta como:
@@ -188,6 +199,8 @@ Tras el bypass exitoso del login, la aplicación mostró la flag:
 ```
 Your flag is: e3d0796d002a446c0e622226f42e9672
 ```
+
+<img width="889" height="606" alt="image" src="https://github.com/user-attachments/assets/53306d8c-0229-42fe-ba2b-79e5faf708ac" />
 
 ---
 
