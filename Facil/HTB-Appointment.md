@@ -1,4 +1,7 @@
-# HTB Lab — SQL Injection en panel de login (Apache/PHP)
+# HTB Appointment
+
+<img width="342" height="152" alt="image" src="https://github.com/user-attachments/assets/7759f0be-7725-4ba1-b24f-ade37dc36efd" />
+
 
 > **Dificultad:** Muy fácil  
 > **SO:** Linux (Debian)  
