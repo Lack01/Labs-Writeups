@@ -36,6 +36,8 @@ PORT   STATE SERVICE VERSION
 | http-server-header: Apache/2.4.38 (Debian)
 |_http-title: Login
 ```
+<img width="690" height="279" alt="image" src="https://github.com/user-attachments/assets/f0e34c99-b1b8-44e5-a76f-bc1b1f7fa148" />
+
 
 **Observaciones:**
 - Solo hay un puerto abierto: el **80/TCP** con HTTP.
